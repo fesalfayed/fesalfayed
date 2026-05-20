@@ -6,7 +6,7 @@ i build agents and i fine-tune models
 
 ---
 
-## what i actually ship
+## what i actually shipped
 
 **hermes function-calling fine-tunes** — gpt-oss-20b tuned for tool use, released in four formats so it runs wherever
 
