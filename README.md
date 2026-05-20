@@ -19,7 +19,7 @@ collection: https://huggingface.co/collections/fesalfayed/finetuned-hermes-funct
 | [gpt-oss-20b-hermes_agent-tool-finetune_4bit](https://huggingface.co/fesalfayed/gpt-oss-20b-hermes_agent-tool-finetune_4bit) | 4-bit | 191 |
 | [gpt-oss-20b-hermes_agent-tool-finetune_16bit](https://huggingface.co/fesalfayed/gpt-oss-20b-hermes_agent-tool-finetune_16bit) | 16-bit | 89 |
 
-2,400+ downloads, no marketing, just shipped
+2,400+ downloads + eval coming soon
 
 ---
 
