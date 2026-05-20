@@ -25,7 +25,7 @@ collection: https://huggingface.co/collections/fesalfayed/finetuned-hermes-funct
 
 ## what i'm in the middle of
 
-a multi-agent setup running on hermes. orchestrator plus a builder and an analyst, talking over discord, pushing to kanban, syncing both ways with notion. unattended, cron-driven, runs while i sleep
+a multi-agent setup running on hermes. orchestratorion frameworks, building local infra for agentic workflows. talking over discord, syncing both ways with notion. and local LLM hosting + evals for personal use-cases.
 
 a quantified-self pipeline that pulls whoop and ultrahuman and oura and apple health into one store. the actual goal is predicting mood from biometrics and context
 
