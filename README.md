@@ -27,9 +27,9 @@ collection: https://huggingface.co/collections/fesalfayed/finetuned-hermes-funct
 
 a multi-agent setup running on hermes. orchestration frameworks, building local infra for agentic workflows. collecting datasets & fine-tuning. and local LLM hosting + evals for personal use-cases.
 
-a quantified-self pipeline that pulls whoop and ultrahuman and oura and apple health into one store. the actual goal is predicting mood from biometrics and context
+a quantified-self pipeline that pulls ultrahuman and siloed ios/apple into one store. the actual goal is predicting mood from biometrics and digital context -> ML model for correlation (coming soon)
 
-llm post-training. quantization. mlx and gguf and 4-bit. getting open models small enough to live on a laptop
+llm post-training. quantization. mlx and gguf and 4-bit. getting open models small enough to live on a mac mini
 
 ---
 
