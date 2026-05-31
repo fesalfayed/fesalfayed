@@ -1,62 +1,66 @@
 <div align="center">
 
-<img src="./system.svg" alt="the system, running — siloed sources → agentic harness → structured signal, steered by a human" width="100%">
-
-<br/>
-
-**Fesal Fayed** &nbsp;·&nbsp; Data &amp; ML Engineer &nbsp;·&nbsp; Miami
-`agents type, humans steer`
+<img src="./attention.svg" alt="a self-attention matrix as a self-portrait — the diagonal is the self attending to the self" width="660">
 
 </div>
 
 <br/>
 
-I build **agents** and fine-tune **models**. Most of my time goes into the pipeline above — turning siloed sources into structured signal you can actually act on, with an agentic harness doing the typing and me doing the steering.
+# Fesal Fayed
+
+> I build agents and fine-tune the models that run them.
+> `agents type, humans steer`
 
 <br/>
 
-### `siloed sources` → what goes in
-
-A **quantified-self pipeline** pulls biometrics (Ultrahuman), iOS context (location, screen time, messages, calendar), training (Hevy), nutrition, and a nightly self-coded journal into one time-series store — then feeds it to ML to answer questions like *"does a late workout plus heavy screen time cost me Tuesday morning?"* Stop guessing the ideal routine; let the machine find the correlations.
-
-### `agentic harness` → what runs
-
-A **multi-profile agentic harness** — orchestrator (chair), builders, analyst — wired through Discord, kanban, and Notion on top of [Hermes](https://huggingface.co/fesalfayed). Agents do the work; the human sets direction. Local-default infra, cloud only on demand, idle GPU fleets meshed over Tailscale when a job needs them.
-
-### `structured signal` → what ships
-
-**hermes function-calling fine-tunes** — `gpt-oss-20b` tuned for tool use, released in four formats so it runs wherever.
-
-| model | format | runs on | downloads |
-| :--- | :--- | :--- | ---: |
-| [`…finetune_mlx`](https://huggingface.co/fesalfayed/gpt-oss-20b-hermes_agent-tool-finetune_mlx) | mlx | Apple Silicon | 1,120 |
-| [`…finetune_gguf`](https://huggingface.co/fesalfayed/gpt-oss-20b-hermes_agent-tool-finetune_gguf) | gguf | llama.cpp · Ollama · LM Studio | 1,006 |
-| [`…finetune_4bit`](https://huggingface.co/fesalfayed/gpt-oss-20b-hermes_agent-tool-finetune_4bit) | 4-bit | Colab | 191 |
-| [`…finetune_16bit`](https://huggingface.co/fesalfayed/gpt-oss-20b-hermes_agent-tool-finetune_16bit) | 16-bit | vLLM | 89 |
-
-> **2,400+ downloads** · evals coming soon · [collection →](https://huggingface.co/collections/fesalfayed/finetuned-hermes-function-calling-v1)
+Most of my work lives in the space between a messy source and a signal you
+can act on. I tune transformers for tool use, wire them into systems that do
+real work, and keep a human — me — holding the wheel. The picture above is a
+decoder's attention seeded from my name; the rest of this page is what it adds
+up to.
 
 <br/>
 
-### `principles`
+### Fine-tuning
+
+`gpt-oss-20b` tuned for function-calling, shipped in four formats so it runs
+wherever you are — Apple Silicon, llama.cpp, Colab, vLLM.
+
+| model | format | runs on |
+| :--- | :--- | :--- |
+| [`finetune_mlx`](https://huggingface.co/fesalfayed/gpt-oss-20b-hermes_agent-tool-finetune_mlx)   | mlx    | Apple Silicon |
+| [`finetune_gguf`](https://huggingface.co/fesalfayed/gpt-oss-20b-hermes_agent-tool-finetune_gguf) | gguf   | llama.cpp · Ollama · LM Studio |
+| [`finetune_4bit`](https://huggingface.co/fesalfayed/gpt-oss-20b-hermes_agent-tool-finetune_4bit) | 4-bit  | Colab |
+| [`finetune_16bit`](https://huggingface.co/fesalfayed/gpt-oss-20b-hermes_agent-tool-finetune_16bit) | 16-bit | vLLM |
+
+> ~4,000 downloads across formats &middot; evals in progress
+> [the collection &rarr;](https://huggingface.co/collections/fesalfayed/finetuned-hermes-function-calling-v1)
+
+<br/>
+
+### Systems
+
+A multi-profile agentic harness — orchestrator, builders, an analyst —
+running on [Hermes](https://huggingface.co/fesalfayed), wired through Discord,
+kanban, and Notion. Local by default, cloud when a job earns it. Alongside it,
+a quantified-self pipeline that folds biometrics, context, and training into
+one store and asks the machine which habits actually move tomorrow.
+
+<br/>
+
+### How I work
 
 ```
-fix the root, not the symptom    ·    local default, cloud on demand
-agents type, humans steer        ·    one project, one repo, one job
+fix the root, not the symptom        local default, cloud on demand
+agents type, humans steer            one project, one repo, one job
 ```
-
-### `stack`
-
-**ml** pytorch · dspy · vllm · llama.cpp · mlx · lm-eval-harness · w&b
-**agents** hermes · mcp · discord · notion workers sdk
-**daily** python · typescript · bash · docker · tailscale
 
 <br/>
 
 <div align="center">
 
-[**hi@fesalfayed.com**](mailto:hi@fesalfayed.com) &nbsp;·&nbsp; [huggingface.co/fesalfayed](https://huggingface.co/fesalfayed) &nbsp;·&nbsp; [fesalfayed.com](https://fesalfayed.com)
+[hi@fesalfayed.com](mailto:hi@fesalfayed.com) &nbsp;·&nbsp; [huggingface.co/fesalfayed](https://huggingface.co/fesalfayed) &nbsp;·&nbsp; [fesalfayed.com](https://fesalfayed.com)
 
-<sub>B.S. Data Science &amp; Artificial Intelligence — Florida International University</sub>
+<sub>Data &amp; ML Engineer &middot; Miami &middot; B.S. Data Science &amp; AI, FIU</sub>
 
 </div>
