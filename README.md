@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="./system.svg" alt="the system, running — siloed sources → agent council → structured signal, steered by a human" width="100%">
+<img src="./system.svg" alt="the system, running — siloed sources → agentic harness → structured signal, steered by a human" width="100%">
 
 <br/>
 
@@ -19,9 +19,9 @@ I build **agents** and fine-tune **models**. Most of my time goes into the pipel
 
 A **quantified-self pipeline** pulls biometrics (Ultrahuman), iOS context (location, screen time, messages, calendar), training (Hevy), nutrition, and a nightly self-coded journal into one time-series store — then feeds it to ML to answer questions like *"does a late workout plus heavy screen time cost me Tuesday morning?"* Stop guessing the ideal routine; let the machine find the correlations.
 
-### `agent council` → what runs
+### `agentic harness` → what runs
 
-A **multi-profile council** — orchestrator (chair), builders, analyst — wired through Discord, kanban, and Notion on top of [Hermes](https://huggingface.co/fesalfayed). Agents do the work; the human sets direction. Local-default infra, cloud only on demand, idle GPU fleets meshed over Tailscale when a job needs them.
+A **multi-profile agentic harness** — orchestrator (chair), builders, analyst — wired through Discord, kanban, and Notion on top of [Hermes](https://huggingface.co/fesalfayed). Agents do the work; the human sets direction. Local-default infra, cloud only on demand, idle GPU fleets meshed over Tailscale when a job needs them.
 
 ### `structured signal` → what ships
 
