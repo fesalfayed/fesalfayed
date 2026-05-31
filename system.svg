@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 900 380" width="900" height="380" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" role="img" aria-label="the system, running — siloed sources to structured signal, agents steered by a human">
+  <defs>
+    <radialGradient id="coreGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#00ff88" stop-opacity="0.30"/>
+      <stop offset="100%" stop-color="#00ff88" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect x="0.5" y="0.5" width="899" height="379" rx="9" fill="#0a0a0a" stroke="#1a1a1a"/>
+
+  <!-- brand anchor -->
+  <text x="26" y="36" font-size="14"><tspan fill="#00ff88">fesal</tspan><tspan fill="#6a6a6a">@</tspan><tspan fill="#4ea1ff">fayed</tspan><tspan fill="#6a6a6a">:~</tspan></text>
+  <text x="874" y="36" font-size="11.5" fill="#3a3a3a" text-anchor="end">// the system, running</text>
+
+  <!-- ===================== wires ===================== -->
+  <g fill="none" stroke="#222222" stroke-width="1.25">
+    <path id="e1" d="M132,150 C 250,150 330,185 424,194"/>
+    <path id="e2" d="M132,212 C 250,212 340,212 424,212"/>
+    <path id="e3" d="M132,274 C 250,274 330,238 424,230"/>
+    <path id="e4" d="M496,212 C 590,212 670,212 752,212"/>
+  </g>
+  <!-- steer line (human -> system) -->
+  <path id="steer" d="M460,98 L460,172" fill="none" stroke="#3a2b46" stroke-width="1.25" stroke-dasharray="3 4"/>
+
+  <!-- ===================== sources ===================== -->
+  <g>
+    <rect x="115" y="141" width="18" height="18" rx="3" fill="#111111" stroke="#333333"/>
+    <rect x="115" y="203" width="18" height="18" rx="3" fill="#111111" stroke="#333333"/>
+    <rect x="115" y="265" width="18" height="18" rx="3" fill="#111111" stroke="#333333"/>
+  </g>
+  <text x="124" y="320" font-size="12" fill="#6a6a6a" text-anchor="middle">siloed sources</text>
+
+  <!-- ===================== agent core ===================== -->
+  <circle cx="460" cy="212" r="52" fill="url(#coreGlow)">
+    <animate attributeName="opacity" values="0.6;1;0.6" dur="3.2s" repeatCount="indefinite"/>
+  </circle>
+  <!-- orbiting council nodes -->
+  <g>
+    <animateTransform attributeName="transform" attributeType="XML" type="rotate"
+      from="0 460 212" to="360 460 212" dur="22s" repeatCount="indefinite"/>
+    <circle cx="460" cy="166" r="3.5" fill="#4ea1ff"/>
+    <circle cx="500" cy="235" r="3.5" fill="#c792ea"/>
+    <circle cx="420" cy="235" r="3.5" fill="#f5d76e"/>
+  </g>
+  <!-- hexagon -->
+  <polygon points="460,176 491.2,194 491.2,230 460,248 428.8,230 428.8,194"
+    fill="#0d0d0d" stroke="#00ff88" stroke-width="1.5" stroke-opacity="0.85"/>
+  <circle cx="460" cy="212" r="4" fill="#00ff88"/>
+  <text x="460" y="320" font-size="12" fill="#6a6a6a" text-anchor="middle">agent council</text>
+
+  <!-- ===================== human / steer ===================== -->
+  <text x="460" y="62" font-size="12" fill="#c792ea" text-anchor="middle">steer</text>
+  <circle cx="460" cy="82" r="8" fill="#0a0a0a" stroke="#c792ea" stroke-width="1.5"/>
+  <circle cx="460" cy="82" r="2.5" fill="#c792ea"/>
+
+  <!-- ===================== output / signal ===================== -->
+  <circle cx="770" cy="212" r="20" fill="#0a0a0a" stroke="#4ea1ff" stroke-width="1.5"/>
+  <circle cx="770" cy="212" r="11" fill="#4ea1ff">
+    <animate attributeName="fill-opacity" values="0.12;0.7;0.12" dur="2.4s" begin="1.2s" repeatCount="indefinite"/>
+  </circle>
+  <text x="770" y="320" font-size="12" fill="#6a6a6a" text-anchor="middle">structured signal</text>
+
+  <!-- ===================== flowing pulses ===================== -->
+  <!-- sources -> core -->
+  <circle r="3" fill="#00ff88">
+    <animateMotion dur="2.4s" begin="0s" repeatCount="indefinite"><mpath xlink:href="#e1"/></animateMotion>
+    <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.12;0.82;1" dur="2.4s" begin="0s" repeatCount="indefinite"/>
+  </circle>
+  <circle r="3" fill="#00ff88">
+    <animateMotion dur="2.4s" begin="0.8s" repeatCount="indefinite"><mpath xlink:href="#e2"/></animateMotion>
+    <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.12;0.82;1" dur="2.4s" begin="0.8s" repeatCount="indefinite"/>
+  </circle>
+  <circle r="3" fill="#00ff88">
+    <animateMotion dur="2.4s" begin="1.6s" repeatCount="indefinite"><mpath xlink:href="#e3"/></animateMotion>
+    <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.12;0.82;1" dur="2.4s" begin="1.6s" repeatCount="indefinite"/>
+  </circle>
+  <!-- core -> signal -->
+  <circle r="3.2" fill="#4ea1ff">
+    <animateMotion dur="2.4s" begin="1.2s" repeatCount="indefinite"><mpath xlink:href="#e4"/></animateMotion>
+    <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.12;0.82;1" dur="2.4s" begin="1.2s" repeatCount="indefinite"/>
+  </circle>
+  <!-- human steer pulse (downward) -->
+  <circle r="2.6" fill="#c792ea">
+    <animateMotion dur="3.6s" begin="0.4s" repeatCount="indefinite"><mpath xlink:href="#steer"/></animateMotion>
+    <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.15;0.8;1" dur="3.6s" begin="0.4s" repeatCount="indefinite"/>
+  </circle>
+</svg>
