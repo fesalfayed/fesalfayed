@@ -11,7 +11,7 @@
 
 <br/>
 
-I build **agents** and fine-tune **models**. Most of my time goes into the pipeline above — turning siloed sources into structured signal you can actually act on, with a multi-agent council doing the typing and me doing the steering.
+I build **agents** and fine-tune **models**. Most of my time goes into the pipeline above — turning siloed sources into structured signal you can actually act on, with an agentic harness doing the typing and me doing the steering.
 
 <br/>
 
