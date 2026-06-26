@@ -72,11 +72,11 @@ More detail: [`oss-contributions`](https://github.com/fesalfayed/oss-contributio
 
 <br/>
 
-### How I work
+### Principles
 
 ```
-build the infra first        glue siloed sources
-agents scaffold, humans design          see the elephant, not the tail
+build the infra first                   glue siloed sources
+humans design, agents scaffold          see the elephant, not the tail
 ```
 
 <br/>
