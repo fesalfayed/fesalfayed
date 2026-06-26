@@ -8,22 +8,21 @@
 
 # Fesal Fayed
 
-> Data & ML engineer building agentic systems and the tool-use models that run them.  
-> `agents type, humans steer`
+> Agentic systems, tool-use fine-tuning, and applied ML · B.S. Data Science & AI @ FIU
 
-I work where LLMs stop being demos and become systems: model fine-tuning,
+Currently exploring agentic infrastructure, model fine-tuning,
 adapter correctness, context management, and the workflow glue that lets agents
-do real work without taking the wheel from the human.
+affect the real world without taking the wheel from the human.
 
 <br/>
 
-### Proof
+### Ongoing Explorations
 
 | signal | evidence |
 | :--- | :--- |
 | **Model shipping** | Fine-tuned `gpt-oss-20b` for Hermes-style tool use and released MLX, GGUF, 4-bit, and 16-bit artifacts |
 | **Adoption** | 9k+ Hugging Face downloads across formats |
-| **OSS** | Fesal-authored Anthropic adapter fix cherry-picked into [`NousResearch/hermes-agent`](https://github.com/NousResearch/hermes-agent/commit/64628ea89b1d5624f47b402edd54b13afd335123) main by Teknium |
+| **OSS** | Authored Anthropic adapter fix cherry-picked into [`NousResearch/hermes-agent`](https://github.com/NousResearch/hermes-agent/commit/64628ea89b1d5624f47b402edd54b13afd335123) main by Teknium |
 | **OSS** | Merged [`hermes-lcm` PR #280](https://github.com/stephenschoettler/hermes-lcm/pull/280), fixing provider-visible summary role invariants |
 | **Systems** | Discord ↔ Notion worker sync, multi-profile agent harness, local-first automation |
 | **DS/ML** | Amazon image-quality + product-rank modeling case study |
@@ -33,8 +32,7 @@ do real work without taking the wheel from the human.
 ### Fine-tuning
 
 `gpt-oss-20b` tuned for Hermes-style function calling, shipped in four formats
-so it runs where the agent does: Apple Silicon, llama.cpp/Ollama, Colab, and
-vLLM.
+Apple Silicon, llama.cpp/Ollama, Colab, and vLLM.
 
 | model | format | runs on |
 | :--- | :--- | :--- |
@@ -50,7 +48,7 @@ vLLM.
 
 ### OSS
 
-I contribute fixes where agent systems fail in production-shaped edge cases:
+My contributed fixes focus on where agent systems fail in production-shaped edge cases:
 provider adapters, signed reasoning blocks, tool-use replay, and context
 assembly.
 
@@ -77,8 +75,8 @@ More detail: [`oss-contributions`](https://github.com/fesalfayed/oss-contributio
 ### How I work
 
 ```
-fix the root, not the symptom        local default, cloud on demand
-agents type, humans steer            one project, one repo, one job
+build the infra first        glue siloed sources
+agents scaffold, humans design          see the elephant, not the tail
 ```
 
 <br/>
