@@ -58,7 +58,7 @@ assembly.
 | [`stephenschoettler/hermes-lcm`](https://github.com/stephenschoettler/hermes-lcm/pull/280) | Merged role-invariant fix so context summaries cannot become provider-visible leading assistant messages |
 
 > More detail: [`oss-contributions`](https://github.com/fesalfayed/oss-contributions).
-
+>
 <br/>
 
 ### Selected work
