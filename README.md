@@ -57,7 +57,7 @@ assembly.
 | [`NousResearch/hermes-agent`](https://github.com/NousResearch/hermes-agent/commit/64628ea89b1d5624f47b402edd54b13afd335123) | Authored Anthropic adapter fix for stale signed-thinking blocks after orphan tool-use stripping; cherry-picked by Teknium with authorship preserved |
 | [`stephenschoettler/hermes-lcm`](https://github.com/stephenschoettler/hermes-lcm/pull/280) | Merged role-invariant fix so context summaries cannot become provider-visible leading assistant messages |
 
-More detail: [`oss-contributions`](https://github.com/fesalfayed/oss-contributions).
+> More detail: [`oss-contributions`](https://github.com/fesalfayed/oss-contributions).
 
 <br/>
 
