@@ -8,43 +8,69 @@
 
 # Fesal Fayed
 
-> I build agents and fine-tune the models that run them.
+> Data & ML engineer building agentic systems and the tool-use models that run them.  
 > `agents type, humans steer`
+
+I work where LLMs stop being demos and become systems: model fine-tuning,
+adapter correctness, context management, and the workflow glue that lets agents
+do real work without taking the wheel from the human.
 
 <br/>
 
-Most of my work lives in the space between a messy source and a signal you
-can act on. I tune transformers for tool use, wire them into systems that do
-real work, and keep a human — me — holding the wheel. The picture above is a
-decoder's attention seeded from my name; the rest of this page is what it adds
-up to.
+### Proof
+
+| signal | evidence |
+| :--- | :--- |
+| **Model shipping** | Fine-tuned `gpt-oss-20b` for Hermes-style tool use and released MLX, GGUF, 4-bit, and 16-bit artifacts |
+| **Adoption** | 9k+ Hugging Face downloads across formats |
+| **OSS** | Fesal-authored Anthropic adapter fix cherry-picked into [`NousResearch/hermes-agent`](https://github.com/NousResearch/hermes-agent/commit/64628ea89b1d5624f47b402edd54b13afd335123) main by Teknium |
+| **OSS** | Merged [`hermes-lcm` PR #280](https://github.com/stephenschoettler/hermes-lcm/pull/280), fixing provider-visible summary role invariants |
+| **Systems** | Discord ↔ Notion worker sync, multi-profile agent harness, local-first automation |
+| **DS/ML** | Amazon image-quality + product-rank modeling case study |
 
 <br/>
 
 ### Fine-tuning
 
-`gpt-oss-20b` tuned for function-calling, shipped in four formats so it runs
-wherever you are — Apple Silicon, llama.cpp, Colab, vLLM.
+`gpt-oss-20b` tuned for Hermes-style function calling, shipped in four formats
+so it runs where the agent does: Apple Silicon, llama.cpp/Ollama, Colab, and
+vLLM.
 
 | model | format | runs on |
 | :--- | :--- | :--- |
-| [`finetune_mlx`](https://huggingface.co/fesalfayed/gpt-oss-20b-hermes_agent-tool-finetune_mlx)   | mlx    | Apple Silicon |
-| [`finetune_gguf`](https://huggingface.co/fesalfayed/gpt-oss-20b-hermes_agent-tool-finetune_gguf) | gguf   | llama.cpp · Ollama · LM Studio |
-| [`finetune_4bit`](https://huggingface.co/fesalfayed/gpt-oss-20b-hermes_agent-tool-finetune_4bit) | 4-bit  | Colab |
-| [`finetune_16bit`](https://huggingface.co/fesalfayed/gpt-oss-20b-hermes_agent-tool-finetune_16bit) | 16-bit | vLLM |
+| [`finetune_mlx`](https://huggingface.co/fesalfayed/gpt-oss-20b-hermes_agent-tool-finetune_mlx) | MLX | Apple Silicon |
+| [`finetune_gguf`](https://huggingface.co/fesalfayed/gpt-oss-20b-hermes_agent-tool-finetune_gguf) | GGUF | llama.cpp · Ollama · LM Studio |
+| [`finetune_4bit`](https://huggingface.co/fesalfayed/gpt-oss-20b-hermes_agent-tool-finetune_4bit) | 4-bit | Colab · low-VRAM experiments |
+| [`finetune_16bit`](https://huggingface.co/fesalfayed/gpt-oss-20b-hermes_agent-tool-finetune_16bit) | 16-bit | vLLM · full precision |
 
-> ~4,000 downloads across formats &middot; evals in progress
-> [the collection &rarr;](https://huggingface.co/collections/fesalfayed/finetuned-hermes-function-calling-v1)
+> 9k+ downloads across formats · MLX, GGUF, 4-bit, and 16-bit exports  
+> [the collection →](https://huggingface.co/collections/fesalfayed/finetuned-hermes-function-calling-v1) · [repo notes →](https://github.com/fesalfayed/gpt-oss-20b-hermes-tool-finetune)
 
 <br/>
 
-### Systems
+### OSS
 
-A multi-profile agentic harness — orchestrator, builders, an analyst —
-running on [Hermes](https://huggingface.co/fesalfayed), wired through Discord,
-kanban, and Notion. Local by default, cloud when a job earns it. Alongside it,
-a quantified-self pipeline that folds biometrics, context, and training into
-one store and asks the machine which habits actually move tomorrow.
+I contribute fixes where agent systems fail in production-shaped edge cases:
+provider adapters, signed reasoning blocks, tool-use replay, and context
+assembly.
+
+| project | contribution |
+| :--- | :--- |
+| [`NousResearch/hermes-agent`](https://github.com/NousResearch/hermes-agent/commit/64628ea89b1d5624f47b402edd54b13afd335123) | Authored Anthropic adapter fix for stale signed-thinking blocks after orphan tool-use stripping; cherry-picked by Teknium with authorship preserved |
+| [`stephenschoettler/hermes-lcm`](https://github.com/stephenschoettler/hermes-lcm/pull/280) | Merged role-invariant fix so context summaries cannot become provider-visible leading assistant messages |
+
+More detail: [`oss-contributions`](https://github.com/fesalfayed/oss-contributions).
+
+<br/>
+
+### Selected work
+
+| work | what it shows |
+| :--- | :--- |
+| [`gpt-oss-20b-hermes-tool-finetune`](https://github.com/fesalfayed/gpt-oss-20b-hermes-tool-finetune) | End-to-end tool-use fine-tuning notes, export matrix, local inference packaging |
+| [`hermes-Notion-Worker-sync`](https://github.com/fesalfayed/hermes-Notion-Worker-sync) | Production-shaped Discord ↔ Notion worker sync on `@notionhq/workers` |
+| [`amazon-image-quality-bsr-analysis`](https://github.com/fesalfayed/amazon-image-quality-bsr-analysis) | Applied DS: image-quality metrics, pricing/review enrichment, BSR modeling |
+| [`fesalfayed.com`](https://github.com/fesalfayed/fesalfayed-com) | Personal site and public identity surface |
 
 <br/>
 
