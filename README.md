@@ -16,7 +16,7 @@
 
 <div align="center">
 
-### "I build local-first agentic infrastructure, fine-tune tool-use models, and turn messy real-world workflows into systems that can be verified."
+### I build local-first agentic infrastructure, fine-tune tool-use models, and turn messy real-world workflows into systems that can be verified.
 
 </div>
 
