@@ -21,12 +21,6 @@ oss        merged fixes in repos totaling 205k+ stars
 based      Miami · B.S. Data Science & AI, FIU
 ```
 
-<div align="center">
-
-<img src="./system.svg" alt="siloed sources pulled through an agentic harness into structured signal — the human steers, the agents scaffold" width="820">
-
-</div>
-
 ---
 
 ## Proof of work
