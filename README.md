@@ -4,13 +4,13 @@
 
 # Fesal Fayed
 
-#### Data &amp; ML Engineer &nbsp;·&nbsp; Agentic Systems &nbsp;·&nbsp; Tool-Use Fine-Tuning &nbsp;·&nbsp; Applied ML
+#### Data &amp; ML Engineer<br/><sub>agentic systems · tool-use fine-tuning · applied ML</sub>
 
 </div>
 
-I build agentic infrastructure and ship the models that run on it — fine-tuning for tool use, fixing where agent systems break in production-shaped edge cases, and writing the workflow glue that lets agents affect the real world without taking the wheel from the human.
+I build agents and fine-tune models. Mostly in the Hermes ecosystem: the model itself, the provider adapters it runs on, the context engine behind it.
 
-My contributed fixes have landed in the Hermes agent ecosystem; my fine-tuned `gpt-oss-20b` tool-use models ship in four runtimes and are downloaded across the Hugging Face community.
+My `gpt-oss-20b` tool-use finetune ships in four runtimes with 9k+ downloads. Two of my fixes are merged into `hermes-agent`, one into `hermes-lcm`.
 
 ```text
 role       Data & ML Engineer
@@ -23,20 +23,9 @@ based      Miami · B.S. Data Science & AI, FIU
 
 ---
 
-## Proof of work
-
-- **Model shipping** — fine-tuned `gpt-oss-20b` for Hermes-style tool use; released MLX, GGUF, 4-bit, and 16-bit artifacts
-- **Adoption** — 9k+ Hugging Face downloads across formats
-- **OSS reach** — merged fixes into repositories totaling **205k+ stars** ([`hermes-agent`](https://github.com/NousResearch/hermes-agent) · [`hermes-lcm`](https://github.com/stephenschoettler/hermes-lcm))
-- **OSS** — two `NousResearch/hermes-agent` fixes accepted by Teknium: [Anthropic signed-thinking replay](https://github.com/NousResearch/hermes-agent/commit/64628ea89b1d5624f47b402edd54b13afd335123) and [WhatsApp LID alias resolution](https://github.com/NousResearch/hermes-agent/commit/263ffec1b03114ec98671919943fb61de7ebf1bf)
-- **Systems** — Discord ↔ Notion worker sync, multi-profile agent harness, local-first automation
-- **Applied DS** — Amazon image-quality + product-rank (BSR) modeling case study
-
----
-
 ## Fine-tuning
 
-`gpt-oss-20b` tuned for Hermes-style function calling, shipped in four formats — Apple Silicon, llama.cpp/Ollama, Colab, and vLLM.
+`gpt-oss-20b`, tuned for Hermes-style function calling. Same weights, four runtimes:
 
 | model | format | runs on |
 | :--- | :--- | :--- |
@@ -51,7 +40,7 @@ based      Miami · B.S. Data Science & AI, FIU
 
 ## Open source
 
-Merged fixes into the Hermes agent ecosystem — repositories totaling **205k+ stars**. My contributions target where agent systems fail in production-shaped edge cases: provider adapters, signed reasoning blocks, tool-use replay, and context assembly.
+Five fixes merged across `hermes-agent` and `hermes-lcm` (205k+ stars combined). These bugs only surface in real agent runs: signed-reasoning replay, tool-use stripping, context assembly.
 
 - **[`hermes-agent`](https://github.com/NousResearch/hermes-agent/pull/35859) — Anthropic extended-thinking crash loop**  
   Authored the fix for crashes when orphan tool-use stripping invalidated signed reasoning blocks. Teknium cherry-picked it to `main` with authorship preserved. [`64628ea`](https://github.com/NousResearch/hermes-agent/commit/64628ea89b1d5624f47b402edd54b13afd335123) · closes [#35847](https://github.com/NousResearch/hermes-agent/issues/35847)
@@ -75,17 +64,17 @@ More detail: [`oss-contributions`](https://github.com/fesalfayed/oss-contributio
 ## Selected work
 
 - **[`gpt-oss-20b-hermes-tool-finetune`](https://github.com/fesalfayed/gpt-oss-20b-hermes-tool-finetune)** — end-to-end tool-use fine-tuning notes, export matrix, local inference packaging
-- **[`hermes-Notion-Worker-sync`](https://github.com/fesalfayed/hermes-Notion-Worker-sync)** — production-shaped Discord ↔ Notion worker sync on `@notionhq/workers`
+- **[`hermes-Notion-Worker-sync`](https://github.com/fesalfayed/hermes-Notion-Worker-sync)** — Discord ↔ Notion worker sync on `@notionhq/workers`
 - **[`amazon-image-quality-bsr-analysis`](https://github.com/fesalfayed/amazon-image-quality-bsr-analysis)** — applied DS: image-quality metrics, pricing/review enrichment, BSR modeling
-- **[`fesalfayed.com`](https://github.com/fesalfayed/fesalfayed-com)** — personal site and public identity surface
+- **[`fesalfayed.com`](https://github.com/fesalfayed/fesalfayed-com)** — my site, a tmux session in the browser
 
 ---
 
 ## Principles
 
 ```text
-build the infra first          ·   glue siloed sources
-humans design, agents scaffold ·   see the elephant, not the tail
+fix the root, not the symptom      ·   local default, cloud on demand
+agents type, humans steer          ·   one project, one repo, one job
 ```
 
 <div align="center">
