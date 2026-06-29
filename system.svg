@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 300" width="860" height="300" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" role="img" aria-label="siloed sources pulled through an agentic harness into structured signal, steered by a human">
+<rect x="0.5" y="0.5" width="859" height="299" rx="10" fill="#0a0a0a" stroke="#1a1a1a"/>
+<text x="40" y="34" font-size="13"><tspan fill="#00ff88">fesal</tspan><tspan fill="#6a6a6a">@</tspan><tspan fill="#4ea1ff">fayed</tspan><tspan fill="#6a6a6a">:~$ </tspan><tspan fill="#e8e8e8">./run --steer</tspan></text>
+<text x="70" y="74" font-size="11.5" fill="#6a6a6a">siloed sources</text>
+<rect x="70" y="79" width="84" height="24" rx="4" fill="#141414" stroke="#3a3a3a"/>
+<text x="112" y="95" font-size="11" fill="#6a6a6a" text-anchor="middle">files</text>
+<rect x="70" y="113" width="84" height="24" rx="4" fill="#141414" stroke="#3a3a3a"/>
+<text x="112" y="129" font-size="11" fill="#6a6a6a" text-anchor="middle">apis</text>
+<rect x="70" y="147" width="84" height="24" rx="4" fill="#141414" stroke="#3a3a3a"/>
+<text x="112" y="163" font-size="11" fill="#6a6a6a" text-anchor="middle">chats</text>
+<rect x="70" y="181" width="84" height="24" rx="4" fill="#141414" stroke="#3a3a3a"/>
+<text x="112" y="197" font-size="11" fill="#6a6a6a" text-anchor="middle">docs</text>
+<rect x="70" y="215" width="84" height="24" rx="4" fill="#141414" stroke="#3a3a3a"/>
+<text x="112" y="231" font-size="11" fill="#6a6a6a" text-anchor="middle">feeds</text>
+<text x="405" y="74" font-size="11.5" fill="#4ea1ff" text-anchor="middle">agentic harness</text>
+<rect x="330" y="96" width="150" height="150" rx="8" fill="rgba(78,161,255,0.06)" stroke="#4ea1ff" stroke-opacity="0.5"/>
+<circle cx="352" cy="122" r="2.6" fill="#4ea1ff"/>
+<text x="364" y="126" font-size="11.5" fill="#e8e8e8">fine-tune</text>
+<circle cx="352" cy="150" r="2.6" fill="#4ea1ff"/>
+<text x="364" y="154" font-size="11.5" fill="#e8e8e8">tool-use</text>
+<circle cx="352" cy="178" r="2.6" fill="#4ea1ff"/>
+<text x="364" y="182" font-size="11.5" fill="#e8e8e8">context</text>
+<circle cx="352" cy="206" r="2.6" fill="#4ea1ff"/>
+<text x="364" y="210" font-size="11.5" fill="#e8e8e8">adapters</text>
+<path d="M 154 92 C 220 92, 270 168, 330 168" fill="none" stroke="#3a3a3a" stroke-width="1.1"/>
+<path d="M 154 126 C 220 126, 270 168, 330 168" fill="none" stroke="#3a3a3a" stroke-width="1.1"/>
+<path d="M 154 160 C 220 160, 270 168, 330 168" fill="none" stroke="#3a3a3a" stroke-width="1.1"/>
+<path d="M 154 194 C 220 194, 270 168, 330 168" fill="none" stroke="#3a3a3a" stroke-width="1.1"/>
+<path d="M 154 228 C 220 228, 270 168, 330 168" fill="none" stroke="#3a3a3a" stroke-width="1.1"/>
+<circle r="2.6" fill="#4ea1ff"><animateMotion dur="3.2s" repeatCount="indefinite" path="M 154 160 C 220 160, 270 168, 330 168"/><animate attributeName="opacity" values="0;1;1;0" dur="3.2s" repeatCount="indefinite"/></circle>
+<text x="670" y="74" font-size="11.5" fill="#00ff88" text-anchor="middle">structured signal</text>
+<rect x="600" y="124" width="180" height="88" rx="8" fill="rgba(0,255,136,0.06)" stroke="#00ff88" stroke-opacity="0.55"/>
+<rect x="618" y="133" width="150" height="6" rx="3" fill="#00ff88" opacity="0.85"/>
+<rect x="618" y="149" width="120" height="6" rx="3" fill="#00ff88" opacity="0.70"/>
+<rect x="618" y="165" width="138" height="6" rx="3" fill="#00ff88" opacity="0.55"/>
+<rect x="618" y="181" width="96" height="6" rx="3" fill="#00ff88" opacity="0.40"/>
+<path d="M 480 168 L 600 168" stroke="#00ff88" stroke-width="1.3" stroke-opacity="0.5" fill="none"/>
+<circle r="2.8" fill="#00ff88"><animateMotion dur="3.2s" begin="1.4s" repeatCount="indefinite" path="M 480 168 L 600 168"/><animate attributeName="opacity" values="0;1;1;0" dur="3.2s" begin="1.4s" repeatCount="indefinite"/></circle>
+<text x="405" y="278" font-size="11" fill="#c792ea" text-anchor="middle">human steers &#183; agents scaffold</text>
+<path d="M 405 262 L 405 246" stroke="#c792ea" stroke-width="1.1" stroke-dasharray="3 3" stroke-opacity="0.7"/>
+<circle cx="405" cy="262" r="3" fill="#c792ea"/>
+</svg>
