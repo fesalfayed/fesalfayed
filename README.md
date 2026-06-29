@@ -1,158 +1,137 @@
 <div align="center">
 
-<img src="./attention.svg" alt="a self-attention matrix as a self-portrait; the diagonal is the self attending to the self" width="660">
+<img src="./attention.svg" alt="a self-attention matrix as a self-portrait — the diagonal is the self attending to the self" width="660">
+
+<br/>
 
 # Fesal Fayed
 
-#### Data and ML Engineer · Agentic Systems Builder · B.S. Data Science and AI @ FIU
-
-[![Website](https://img.shields.io/badge/Website-fesalfayed.com-111111?style=for-the-badge)](https://fesalfayed.com)
-[![Hugging Face](https://img.shields.io/badge/Hugging%20Face-fesalfayed-ffcc4d?style=for-the-badge)](https://huggingface.co/fesalfayed)
-[![Email](https://img.shields.io/badge/Email-hi%40fesalfayed.com-444444?style=for-the-badge)](mailto:hi@fesalfayed.com)
+> Agentic systems, tool-use fine-tuning, and applied ML · B.S. Data Science & AI @ FIU
 
 </div>
 
----
-
-<div align="center">
-
-### I build local-first agentic infrastructure, fine-tune tool-use models, and turn messy real-world workflows into systems that can be verified.
-
-</div>
+<br/>
 
 <table>
 <tr>
-<td width="60%" valign="top">
+<td align="center">
 
-## Who I Am
-
-I'm **Fesal Fayed** - a Data and ML engineer studying **Data Science and Artificial Intelligence at Florida International University**.
-
-My work sits at the seam between applied ML, agentic systems, and operational infrastructure: tool-use fine-tuning, provider adapter correctness, context management, Discord and Notion automation, and local-first workflows where agents assist without taking control away from the human.
-
-I care most about systems that survive contact with reality: grounded data pipelines, reversible patches, provenance, verification loops, and small automation surfaces that compound into durable leverage.
-
-</td>
-<td width="40%" valign="top">
-
-## At a Glance
-
-```yaml
-name:        Fesal Fayed
-location:    Miami, FL
-school:      Florida International University
-program:     B.S. Data Science and AI
-focus:       Agentic systems, ML, automation
-shipping:    Tool-use fine-tunes and OSS fixes
-platforms:   GitHub, Hugging Face, Cloudflare
-principle:   Build the infra first
-```
+Currently exploring agentic infrastructure, model fine-tuning,
+adapter correctness, context management, and the workflow glue that lets agents
+affect the real world without taking the wheel from the human.
 
 </td>
 </tr>
 </table>
 
----
-
-## Current Work
+<br/>
 
 <table>
 <tr>
-<td width="50%" valign="top">
+<td valign="top" width="50%">
 
-### Building
+### Ongoing Explorations
 
-- **Agentic OS** - a local-first multi-profile agent harness around Discord, Notion, memory, scheduled jobs, and verification-oriented workflows.
-- **Tool-use fine-tuning** - `gpt-oss-20b` tuned for Hermes-style function calling and exported for MLX, GGUF, 4-bit, and 16-bit runtimes.
-- **Vertical intelligence systems** - data pipelines and report infrastructure for high-margin local operators.
-- **Quantified self infrastructure** - biometric and context pipelines aimed at behavior-to-outcome modeling.
-
-</td>
-<td width="50%" valign="top">
-
-### Exploring
-
-- Provider adapter invariants for long-context, tool-use, and signed-reasoning edge cases.
-- Latent context memory, compaction, and retrieval systems for agents that work across long projects.
-- Practical data-product loops: scrape, normalize, model, inspect, render, and verify.
-- Local-first automation that keeps credentials, memory, and user control scoped by profile.
-
-</td>
-</tr>
-</table>
-
----
-
-## Proof Points
-
-| area | grounded evidence |
+| signal | evidence |
 | :--- | :--- |
 | **Model shipping** | Fine-tuned `gpt-oss-20b` for Hermes-style tool use and released MLX, GGUF, 4-bit, and 16-bit artifacts |
-| **Adoption** | 9.4k+ Hugging Face downloads across the released model formats |
-| **OSS** | Authored two accepted `NousResearch/hermes-agent` fixes with authorship preserved by Teknium |
+| **Adoption** | 9k+ Hugging Face downloads across formats |
+| **OSS** | Authored two `NousResearch/hermes-agent` fixes accepted by Teknium: [Anthropic signed-thinking replay](https://github.com/NousResearch/hermes-agent/commit/64628ea89b1d5624f47b402edd54b13afd335123) and [WhatsApp LID alias resolution](https://github.com/NousResearch/hermes-agent/commit/263ffec1b03114ec98671919943fb61de7ebf1bf) |
 | **OSS** | Merged [`hermes-lcm` PR #280](https://github.com/stephenschoettler/hermes-lcm/pull/280), fixing provider-visible summary role invariants |
-| **Systems** | Built Discord to Notion worker sync, multi-profile agent orchestration, memory-backed workflows, and Cloudflare-hosted personal surfaces |
-| **Applied ML** | Amazon image-quality and product-rank modeling case study |
+| **Systems** | Discord ↔ Notion worker sync, multi-profile agent harness, local-first automation |
+| **DS/ML** | Amazon image-quality + product-rank modeling case study |
 
----
+</td>
+</tr>
+</table>
 
-## Fine-Tuning
+<br/>
 
-`gpt-oss-20b` tuned for Hermes-style function calling and shipped in formats that cover local Apple Silicon, llama.cpp/Ollama, Colab-class experiments, and full-precision serving.
+<table>
+<tr>
+<td valign="top" width="50%">
+
+### Fine-tuning
+
+`gpt-oss-20b` tuned for Hermes-style function calling, shipped in four formats
+Apple Silicon, llama.cpp/Ollama, Colab, and vLLM.
 
 | model | format | runs on |
 | :--- | :--- | :--- |
 | [`finetune_mlx`](https://huggingface.co/fesalfayed/gpt-oss-20b-hermes_agent-tool-finetune_mlx) | MLX | Apple Silicon |
-| [`finetune_gguf`](https://huggingface.co/fesalfayed/gpt-oss-20b-hermes_agent-tool-finetune_gguf) | GGUF | llama.cpp, Ollama, LM Studio |
-| [`finetune_4bit`](https://huggingface.co/fesalfayed/gpt-oss-20b-hermes_agent-tool-finetune_4bit) | 4-bit | Colab and low-VRAM experiments |
-| [`finetune_16bit`](https://huggingface.co/fesalfayed/gpt-oss-20b-hermes_agent-tool-finetune_16bit) | 16-bit | vLLM and full-precision serving |
+| [`finetune_gguf`](https://huggingface.co/fesalfayed/gpt-oss-20b-hermes_agent-tool-finetune_gguf) | GGUF | llama.cpp · Ollama · LM Studio |
+| [`finetune_4bit`](https://huggingface.co/fesalfayed/gpt-oss-20b-hermes_agent-tool-finetune_4bit) | 4-bit | Colab · low-VRAM experiments |
+| [`finetune_16bit`](https://huggingface.co/fesalfayed/gpt-oss-20b-hermes_agent-tool-finetune_16bit) | 16-bit | vLLM · full precision |
 
-> 9,459 downloads across formats as of the latest profile refresh.  
-> [Hugging Face collection](https://huggingface.co/collections/fesalfayed/finetuned-hermes-function-calling-v1) · [training notes](https://github.com/fesalfayed/gpt-oss-20b-hermes-tool-finetune)
+> 9k+ downloads across formats · MLX, GGUF, 4-bit, and 16-bit exports  
+> [the collection →](https://huggingface.co/collections/fesalfayed/finetuned-hermes-function-calling-v1) · [repo notes →](https://github.com/fesalfayed/gpt-oss-20b-hermes-tool-finetune)
 
----
+</td>
+</tr>
+</table>
 
-## Open Source Contributions
+<br/>
 
-My contributions focus on where agent systems break in production-shaped edge cases: provider adapters, signed reasoning blocks, tool-use replay, session identity, and context assembly.
+<table>
+<tr>
+<td valign="top">
+
+### OSS
+
+My contributed fixes focus on where agent systems fail in production-shaped edge cases:
+provider adapters, signed reasoning blocks, tool-use replay, and context
+assembly.
 
 | project | contribution |
 | :--- | :--- |
-| [`NousResearch/hermes-agent`](https://github.com/NousResearch/hermes-agent/pull/35859) | Authored the fix for Anthropic extended-thinking crash loops when orphan tool-use stripping invalidated signed reasoning blocks; Teknium cherry-picked it to `main` with authorship preserved ([commit `64628ea`](https://github.com/NousResearch/hermes-agent/commit/64628ea89b1d5624f47b402edd54b13afd335123), closes [#35847](https://github.com/NousResearch/hermes-agent/issues/35847)) |
-| [`NousResearch/hermes-agent`](https://github.com/NousResearch/hermes-agent/pull/54083) | Authored the WhatsApp LID alias session-path fix so modern `platforms/whatsapp/session` installs stop silently dropping allowlisted senders; accepted with authorship preserved ([commit `263ffec`](https://github.com/NousResearch/hermes-agent/commit/263ffec1b03114ec98671919943fb61de7ebf1bf), closes [#36664](https://github.com/NousResearch/hermes-agent/issues/36664)) |
-| [`NousResearch/hermes-agent`](https://github.com/NousResearch/hermes-agent/issues/35975) | Filed and root-caused an interleaved-thinking signature crash loop; maintainers confirmed the order-preserving channel on `main` solved it without demoting reasoning |
+| [`NousResearch/hermes-agent`](https://github.com/NousResearch/hermes-agent/pull/35859) | Authored the fix for Anthropic extended-thinking crash loops when orphan tool-use stripping invalidated signed reasoning blocks; Teknium salvaged/cherry-picked it to `main` with authorship preserved ([commit `64628ea`](https://github.com/NousResearch/hermes-agent/commit/64628ea89b1d5624f47b402edd54b13afd335123), closes [#35847](https://github.com/NousResearch/hermes-agent/issues/35847)) |
+| [`NousResearch/hermes-agent`](https://github.com/NousResearch/hermes-agent/pull/54083) | Authored the WhatsApp LID alias session-path fix so modern `platforms/whatsapp/session` installs stop silently dropping allowlisted senders; Teknium accepted it with authorship preserved ([commit `263ffec`](https://github.com/NousResearch/hermes-agent/commit/263ffec1b03114ec98671919943fb61de7ebf1bf), closes [#36664](https://github.com/NousResearch/hermes-agent/issues/36664)) |
+| [`NousResearch/hermes-agent`](https://github.com/NousResearch/hermes-agent/issues/35975) | Filed and root-caused a separate interleaved-thinking signature crash loop; maintainers confirmed the order-preserving channel on `main` solved it without demoting reasoning |
 | [`NousResearch/hermes-agent`](https://github.com/NousResearch/hermes-agent/pull/52276) | Maintains an adapter-level backstop PR for leading-assistant transcripts after compaction, complementing the built-in compressor fix path for [#52160](https://github.com/NousResearch/hermes-agent/issues/52160) / [#52167](https://github.com/NousResearch/hermes-agent/pull/52167) |
 | [`stephenschoettler/hermes-lcm`](https://github.com/stephenschoettler/hermes-lcm/pull/280) | Merged role-invariant fix so DAG context summaries cannot become provider-visible leading assistant messages |
 
-> More detail: [`oss-contributions`](https://github.com/fesalfayed/oss-contributions)
+> More detail: [`oss-contributions`](https://github.com/fesalfayed/oss-contributions).
+>
 
----
+</td>
+</tr>
+</table>
 
-## Selected Work
+<br/>
+
+<table>
+<tr>
+<td valign="top" width="60%">
+
+### Selected work
 
 | work | what it shows |
 | :--- | :--- |
-| [`gpt-oss-20b-hermes-tool-finetune`](https://github.com/fesalfayed/gpt-oss-20b-hermes-tool-finetune) | End-to-end tool-use fine-tuning notes, export matrix, and local inference packaging |
-| [`hermes-Notion-Worker-sync`](https://github.com/fesalfayed/hermes-Notion-Worker-sync) | Production-shaped Discord to Notion sync on `@notionhq/workers` |
-| [`amazon-image-quality-bsr-analysis`](https://github.com/fesalfayed/amazon-image-quality-bsr-analysis) | Applied DS: image-quality metrics, pricing and review enrichment, and BSR modeling |
+| [`gpt-oss-20b-hermes-tool-finetune`](https://github.com/fesalfayed/gpt-oss-20b-hermes-tool-finetune) | End-to-end tool-use fine-tuning notes, export matrix, local inference packaging |
+| [`hermes-Notion-Worker-sync`](https://github.com/fesalfayed/hermes-Notion-Worker-sync) | Production-shaped Discord ↔ Notion worker sync on `@notionhq/workers` |
+| [`amazon-image-quality-bsr-analysis`](https://github.com/fesalfayed/amazon-image-quality-bsr-analysis) | Applied DS: image-quality metrics, pricing/review enrichment, BSR modeling |
 | [`fesalfayed.com`](https://github.com/fesalfayed/fesalfayed-com) | Personal site and public identity surface |
 
----
+</td>
+<td valign="top" width="40%">
 
-## Operating Principles
+### Principles
 
-```text
-build the infra first                    keep the human in control
-verify before claiming                   reversible patches over big swings
-glue siloed sources                      see the elephant, not the tail
+```
+build the infra first                   glue siloed sources
+humans design, agents scaffold          see the elephant, not the tail
 ```
 
----
+</td>
+</tr>
+</table>
+
+<br/>
 
 <div align="center">
 
-[hi@fesalfayed.com](mailto:hi@fesalfayed.com) &middot; [huggingface.co/fesalfayed](https://huggingface.co/fesalfayed) &middot; [fesalfayed.com](https://fesalfayed.com)
+[hi@fesalfayed.com](mailto:hi@fesalfayed.com) &nbsp;·&nbsp; [huggingface.co/fesalfayed](https://huggingface.co/fesalfayed) &nbsp;·&nbsp; [fesalfayed.com](https://fesalfayed.com)
 
-<sub>Data and ML Engineer &middot; Miami &middot; B.S. Data Science and AI, FIU</sub>
+<sub>Data &amp; ML Engineer &middot; Miami &middot; B.S. Data Science &amp; AI, FIU</sub>
 
 </div>
