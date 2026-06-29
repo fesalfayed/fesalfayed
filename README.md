@@ -22,7 +22,7 @@ affect the real world without taking the wheel from the human.
 | :--- | :--- |
 | **Model shipping** | Fine-tuned `gpt-oss-20b` for Hermes-style tool use and released MLX, GGUF, 4-bit, and 16-bit artifacts |
 | **Adoption** | 9k+ Hugging Face downloads across formats |
-| **OSS** | Authored Anthropic adapter fix cherry-picked into [`NousResearch/hermes-agent`](https://github.com/NousResearch/hermes-agent/commit/64628ea89b1d5624f47b402edd54b13afd335123) main by Teknium |
+| **OSS** | Authored two `NousResearch/hermes-agent` fixes accepted by Teknium: [Anthropic signed-thinking replay](https://github.com/NousResearch/hermes-agent/commit/64628ea89b1d5624f47b402edd54b13afd335123) and [WhatsApp LID alias resolution](https://github.com/NousResearch/hermes-agent/commit/263ffec1b03114ec98671919943fb61de7ebf1bf) |
 | **OSS** | Merged [`hermes-lcm` PR #280](https://github.com/stephenschoettler/hermes-lcm/pull/280), fixing provider-visible summary role invariants |
 | **Systems** | Discord ↔ Notion worker sync, multi-profile agent harness, local-first automation |
 | **DS/ML** | Amazon image-quality + product-rank modeling case study |
@@ -54,8 +54,11 @@ assembly.
 
 | project | contribution |
 | :--- | :--- |
-| [`NousResearch/hermes-agent`](https://github.com/NousResearch/hermes-agent/commit/64628ea89b1d5624f47b402edd54b13afd335123) | Authored Anthropic adapter fix for stale signed-thinking blocks after orphan tool-use stripping; cherry-picked by Teknium with authorship preserved |
-| [`stephenschoettler/hermes-lcm`](https://github.com/stephenschoettler/hermes-lcm/pull/280) | Merged role-invariant fix so context summaries cannot become provider-visible leading assistant messages |
+| [`NousResearch/hermes-agent`](https://github.com/NousResearch/hermes-agent/pull/35859) | Authored the fix for Anthropic extended-thinking crash loops when orphan tool-use stripping invalidated signed reasoning blocks; Teknium salvaged/cherry-picked it to `main` with authorship preserved ([commit `64628ea`](https://github.com/NousResearch/hermes-agent/commit/64628ea89b1d5624f47b402edd54b13afd335123), closes [#35847](https://github.com/NousResearch/hermes-agent/issues/35847)) |
+| [`NousResearch/hermes-agent`](https://github.com/NousResearch/hermes-agent/pull/54083) | Authored the WhatsApp LID alias session-path fix so modern `platforms/whatsapp/session` installs stop silently dropping allowlisted senders; Teknium accepted it with authorship preserved ([commit `263ffec`](https://github.com/NousResearch/hermes-agent/commit/263ffec1b03114ec98671919943fb61de7ebf1bf), closes [#36664](https://github.com/NousResearch/hermes-agent/issues/36664)) |
+| [`NousResearch/hermes-agent`](https://github.com/NousResearch/hermes-agent/issues/35975) | Filed and root-caused a separate interleaved-thinking signature crash loop; maintainers confirmed the order-preserving channel on `main` solved it without demoting reasoning |
+| [`NousResearch/hermes-agent`](https://github.com/NousResearch/hermes-agent/pull/52276) | Maintains an adapter-level backstop PR for leading-assistant transcripts after compaction, complementing the built-in compressor fix path for [#52160](https://github.com/NousResearch/hermes-agent/issues/52160) / [#52167](https://github.com/NousResearch/hermes-agent/pull/52167) |
+| [`stephenschoettler/hermes-lcm`](https://github.com/stephenschoettler/hermes-lcm/pull/280) | Merged role-invariant fix so DAG context summaries cannot become provider-visible leading assistant messages |
 
 > More detail: [`oss-contributions`](https://github.com/fesalfayed/oss-contributions).
 >
