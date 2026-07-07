@@ -4,21 +4,15 @@
 
 # Fesal Fayed
 
-#### Data &amp; ML Engineer<br/><sub>agentic systems · tool-use fine-tuning · applied ML</sub>
+I build agents and fine-tune models.
 
 </div>
 
-I build agents and fine-tune models. Mostly in the Hermes ecosystem: the model itself, the provider adapters it runs on, the context engine behind it.
-
-My `gpt-oss-20b` tool-use finetune ships in four runtimes with 9k+ downloads. Two of my fixes are merged into `hermes-agent`, one into `hermes-lcm`.
-
 ```text
-role       Data & ML Engineer
 focus      agent infra · fine-tuning · adapter correctness · context
 shipped    gpt-oss-20b tool-use finetune — MLX · GGUF · 4-bit · 16-bit
 adoption   9k+ Hugging Face downloads
-oss        merged fixes in repos totaling 205k+ stars
-based      Miami · B.S. Data Science & AI, FIU
+oss        five fixes merged into hermes-agent + hermes-lcm (205k+ stars combined)
 ```
 
 ---
@@ -80,7 +74,5 @@ agents type, humans steer          ·   one project, one repo, one job
 <div align="center">
 
 [hi@fesalfayed.com](mailto:hi@fesalfayed.com) &nbsp;·&nbsp; [huggingface.co/fesalfayed](https://huggingface.co/fesalfayed) &nbsp;·&nbsp; [fesalfayed.com](https://fesalfayed.com)
-
-<sub>Data &amp; ML Engineer &middot; Miami &middot; B.S. Data Science &amp; AI, FIU</sub>
 
 </div>
