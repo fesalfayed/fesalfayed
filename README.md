@@ -1,4 +1,3 @@
-I train small models for tool use and fix the runtimes that serve them.
 
 ---
 
