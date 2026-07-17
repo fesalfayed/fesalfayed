@@ -1,7 +1,7 @@
 
 ---
 
-**[gpt-oss-20b, tuned for tool use](https://huggingface.co/collections/fesalfayed/finetuned-hermes-function-calling-v1)** — one weight set exported to four runtimes: MLX, GGUF, 4-bit, 16-bit. 14k downloads. [build notes →](https://github.com/fesalfayed/gpt-oss-20b-hermes-tool-finetune)
+**[gpt-oss-20b, tuned for tool use](https://huggingface.co/collections/fesalfayed/finetuned-hermes-function-calling-v1)** — one weight set exported to four runtimes: MLX, GGUF, 4-bit, 16-bit. 14k downloads.
 
 **Merged into [`hermes-agent`](https://github.com/NousResearch/hermes-agent) (210k★) and [`hermes-lcm`](https://github.com/stephenschoettler/hermes-lcm)** — three fixes for bugs that only surface in real agent runs:
 
