@@ -38,7 +38,7 @@ The hermes-agent commits landed through maintainer cherry-picks from my closed p
 
 ## Models
 
-19,786 all-time downloads of one gpt-oss-20b tool-use finetune, exported to GGUF, MLX, 4-bit, and 16-bit ([Hugging Face](https://huggingface.co/fesalfayed)).
+19,786 all-time downloads of my `gpt-oss-20b` tool-use finetune on [NousResearch's dataset](https://huggingface.co/datasets/NousResearch/hermes-function-calling-v1) using a standard [unsloth notebook](https://unsloth.ai/docs/get-started/unsloth-notebooks), exported to GGUF, MLX, 4-bit, and 16-bit ([Hugging Face](https://huggingface.co/fesalfayed)).
 
 ## Contact
 
