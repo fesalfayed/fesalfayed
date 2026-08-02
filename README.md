@@ -10,11 +10,11 @@ Rank #1 of 64 on the comma.ai video compression [leaderboard](https://comma.ai/l
 
 | Rank | Entry | Score (lower is better) |
 |---:|---|---:|
-| 1 | `semantic-pose-HPAC_CPR1` (mine) | 0.172 |
-| 2 | `rhnerv_latent_polish` | 0.187 |
-| 8 | `hnerv_ft_microcodec` (prize winner) | 0.193 |
-| 9 | `hnerv_lc_ac` (prize winner) | 0.195 |
-| 10 | `hnerv_lc_v2_scale095_rplus1` (prize winner) | 0.195 |
+| **►1** | **`semantic-pose-HPAC_CPR1`** <kbd>(mine)</kbd> | **0.172** |
+| *2* | *`rhnerv_latent_polish`* | *0.187* |
+| *8* | *`hnerv_ft_microcodec` (prize winner)* | *0.193* |
+| *9* | *`hnerv_lc_ac` (prize winner)* | *0.195* |
+| *10* | *`hnerv_lc_v2_scale095_rplus1` (prize winner)* | *0.195* |
 
 My submitted PR extends jas0xf's [merged PR #86](https://github.com/commaai/comma_video_compression_challenge/pull/86), which established the semantic-token and HPAC codec family in this challenge. I trained three components for it: a width-96 semantic renderer, a learned low-rank pose basis rendered per frame by one einsum rather than by a network, and an integer HPAC entropy model whose arithmetic-coded token stream is 116,980 bytes of the 191,052-byte archive. What is original in that lineage is exactness: HPAC inference on a bounded integer lattice with cross-device symbol verification, a standalone pose carrier in place of PR #86's NeRV slave renderer, and a deterministic repack gated on the archive hash. The reproducible training recipe and archive [rebuilds byte-exact from a clean clone](https://github.com/fesalfayed/comma-ai-semantic-pose-hpac-cpr1), another entrant [reproduced it](https://github.com/commaai/comma_video_compression_challenge/pull/130#issuecomment-5016978941) on their own RTX 5070 at 0.171. 
 
