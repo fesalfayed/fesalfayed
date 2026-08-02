@@ -1,8 +1,12 @@
-I build machine-learning systems under hard constraints and publish what the measurements said.
+**B.S. Data Science & AI** -- Florida International University
 
-## Video compression
+---
 
-Rank #1 of 64 on the [comma.ai video compression leaderboard](https://comma.ai/leaderboard), score 0.172 on comma's [official T4 evaluation](https://github.com/commaai/comma_video_compression_challenge/pull/130#issuecomment-5028795671) over 600 samples.
+## Comma.ai's [lossy_video_compression_challenge](https://github.com/commaai/comma_video_compression_challenge) - current #1
+
+Challenge: compress a 1 minute 37.5 MB dashcam video as much as possible while preserving as much detail for SegNet to still identify the road boundaries and PoseNet to determine temporal dynamics - `spoiler one of them is lazy and the other is half-blind.`
+
+Rank #1 of 64 on the comma.ai video compression [leaderboard](https://comma.ai/leaderboard), score 0.172 on comma's [official T4 evaluation](https://github.com/commaai/comma_video_compression_challenge/pull/130#issuecomment-5028795671) over 600 samples.
 
 | Rank | Entry | Score (lower is better) |
 |---:|---|---:|
@@ -12,7 +16,11 @@ Rank #1 of 64 on the [comma.ai video compression leaderboard](https://comma.ai/l
 | 9 | `hnerv_lc_ac` (prize winner) | 0.195 |
 | 10 | `hnerv_lc_v2_scale095_rplus1` (prize winner) | 0.195 |
 
-This extends jas0xf's [merged PR #86](https://github.com/commaai/comma_video_compression_challenge/pull/86), which established the semantic-token and HPAC codec family in this challenge. I trained three components for it: a width-96 semantic renderer, a learned low-rank pose basis rendered per frame by one einsum rather than by a network, and an integer HPAC entropy model whose arithmetic-coded token stream is 116,980 bytes of the 191,052-byte archive. What is original in that lineage is exactness: HPAC inference on a bounded integer lattice with cross-device symbol verification, a standalone pose carrier in place of PR #86's NeRV slave renderer, and a deterministic repack gated on the archive hash. The archive [rebuilds byte-exact from a clean clone](https://github.com/fesalfayed/comma-ai-semantic-pose-hpac-cpr1), and another entrant [reproduced it](https://github.com/commaai/comma_video_compression_challenge/pull/130#issuecomment-5016978941) on their own RTX 5070 at 0.171. Prizes went to entries that landed earlier, so this holds the top score and no prize.
+My submitted PR extends jas0xf's [merged PR #86](https://github.com/commaai/comma_video_compression_challenge/pull/86), which established the semantic-token and HPAC codec family in this challenge. I trained three components for it: a width-96 semantic renderer, a learned low-rank pose basis rendered per frame by one einsum rather than by a network, and an integer HPAC entropy model whose arithmetic-coded token stream is 116,980 bytes of the 191,052-byte archive. What is original in that lineage is exactness: HPAC inference on a bounded integer lattice with cross-device symbol verification, a standalone pose carrier in place of PR #86's NeRV slave renderer, and a deterministic repack gated on the archive hash. The reproducible training recipe and archive [rebuilds byte-exact from a clean clone](https://github.com/fesalfayed/comma-ai-semantic-pose-hpac-cpr1), another entrant [reproduced it](https://github.com/commaai/comma_video_compression_challenge/pull/130#issuecomment-5016978941) on their own RTX 5070 at 0.171. 
+
+Challenge was active at the time of submission but the prizes deadline had already passed so they went to entries that landed earlier, so this holds the top score and no prize. 
+
+My prize was a submission that slashed the former leaderboard's #1 by 8% in a single leap (0.187 → 0.172) after months of downstream entries fighting for 0.001 crumbs. Prior entries spent months trading micro-optimizations for a cumulative 4% gain, my submission doubled the progress of the previous 30 submissions combined. 
 
 ## Open source
 
