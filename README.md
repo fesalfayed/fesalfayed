@@ -2,7 +2,7 @@
 
 ---
 
-## Comma.ai's [lossy_video_compression_challenge](https://github.com/commaai/comma_video_compression_challenge) - current #1
+## Comma.ai's [lossy_video_compression_challenge](https://github.com/commaai/comma_video_compression_challenge) - former #1 (current #2)
 
 Challenge: compress a 1 minute 37.5 MB dashcam video as much as possible while preserving as much detail for SegNet to still identify the road boundaries and PoseNet to determine temporal dynamics - `spoiler one of them is lazy and the other is half-blind.`
 
