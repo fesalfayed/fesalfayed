@@ -4,7 +4,7 @@
 # Things I'm Proud of:
 
 
-## Comma.ai's [lossy_video_compression_challenge](https://github.com/commaai/comma_video_compression_challenge) - former #1 (current #3)
+## 1. Comma.ai's [lossy_video_compression_challenge](https://github.com/commaai/comma_video_compression_challenge) - former #1 (current #3)
 
 Challenge: compress a 1 minute 37.5 MB dashcam video as much as possible while preserving as much detail for SegNet to still identify the road boundaries and PoseNet to determine temporal dynamics - `spoiler one of them is lazy and the other is half-blind.`
 
@@ -25,7 +25,7 @@ Challenge was active at the time of submission but the prizes deadline had alrea
 
 My prize was a submission that slashed the former leaderboard's #1 by 8% in a single leap (0.187 → 0.172) after months of downstream entries fighting for 0.001 crumbs. Prior entries spent months trading micro-optimizations for a cumulative 4% gain, my submission doubled the progress of the previous 30 submissions combined. 
 
-## Open source
+## 2. Open source
 
 Five fixes landed on `main` across three external repositories.
 
@@ -39,7 +39,7 @@ Five fixes landed on `main` across three external repositories.
 
 The hermes-agent commits landed through maintainer cherry-picks from my closed pull requests, with git authorship preserved. I filed the topcoat panic as [#272](https://github.com/tokio-rs/topcoat/issues/272); the fix merged 57 minutes after I opened the pull request.
 
-## Models
+## 3. Models
 
 19,786 all-time downloads of my `gpt-oss-20b` tool-use finetune on [NousResearch's dataset](https://huggingface.co/datasets/NousResearch/hermes-function-calling-v1) using a standard [unsloth notebook](https://unsloth.ai/docs/get-started/unsloth-notebooks), exported to GGUF, MLX, 4-bit, and 16-bit ([Hugging Face](https://huggingface.co/fesalfayed)).
 
