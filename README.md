@@ -1,6 +1,8 @@
 **B.S. Data Science & AI** -- Florida International University
 
 ---
+# Things I'm Proud of:
+
 
 ## Comma.ai's [lossy_video_compression_challenge](https://github.com/commaai/comma_video_compression_challenge) - former #1 (current #3)
 
