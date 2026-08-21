@@ -6,8 +6,9 @@
 
 Challenge: compress a 1 minute 37.5 MB dashcam video as much as possible while preserving as much detail for SegNet to still identify the road boundaries and PoseNet to determine temporal dynamics - `spoiler one of them is lazy and the other is half-blind.`
 
-Rank #1 of 64 on the comma.ai video compression [leaderboard](https://comma.ai/leaderboard), score 0.172 on comma's [official T4 evaluation](https://github.com/commaai/comma_video_compression_challenge/pull/130#issuecomment-5028795671) over 600 samples.
+Ranked #1 of 64 on the comma.ai video compression [leaderboard](https://comma.ai/leaderboard), score 0.172 on comma's [official T4 evaluation](https://github.com/commaai/comma_video_compression_challenge/pull/130#issuecomment-5028795671) over 600 samples.
 
+### Outdated Snapshot:
 | Rank | Entry | Score (lower is better) |
 |---:|---|---:|
 | **►1** | **`semantic-pose-HPAC_CPR1`** <kbd>(mine)</kbd> | **0.172** |
